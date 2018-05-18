@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Мой первый сайт на html</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+</head>
+<style>
+/*Каркас сайта*/
+body {padding:0px; margin:0; background:#4c281e; font-size:14px; font-family:Arial, Sans-serif;}
+#basic {width:960px; min-height:500px; margin:0 auto; padding:20px 20px 20px 20px; background-image: url(images/фон.jpg);}
+img {border:0;}
+a {color:#ff9c00;}
+a:hover {text-decoration:none;}
+ 
+/*Шапка сайта*/
+#head-site {height:70px;}
+li.none-bg {background:none!important;}
+.telefon {float:right;}
+ 
+/*Верхнее меню сайта*/
+#top-menu {width:960px; height:74px; }
+.bg-1 {width:950px; height:64px; background:#4c281e url(images/m1.png) repeat-x; padding:0 0 0 10px;}
+.bg-2 {width:940px; height:8px; background:#ff9c00; margin:0 auto;}
+.bg-1 ul {margin:0; padding:0; list-style:none;}
+.bg-1 ul li {float:left; background:url(images/m2.png) no-repeat right center; padding:0 2px 0 0;}
+.bg-1 ul li a {display:block; height:40px; padding:24px 27px 0 27px; color:#ff9c00; text-decoration:none; text-transform:uppercase;}
+.bg-1 ul li a:hover {color:#fff; background:#ff9c00;}
+ 
+/*Левое меню и Контент*/
+#content {width:960px; padding:20px 0 0 0; }
+ 
+/*Контент - правый блок*/
+.right { float:center; width:690px; padding:0 0 0 20px; text-align:justify;}
+.right h1 {text-transform:uppercase; color:#4c281e; font-weight:normal; margin-top:0;}
+ 
+/*Подвал*/
+.myclr {clear:both; float:none; width:100%; height:1px;}
+#podval {border-top:10px solid #4c281e; margin-top:20px;}
+.yellow {width:940px; height:5px; margin:0 auto; background:#ff9c00;}
+.p1 {float:left; width:300px; padding:15px 0 0 0;}
+.p2 {float:right; width:200px; text-align:right; padding:15px 20px 0 0;}
+.p3 {float:right; width:30px; padding:15px 0 0 0;}
+
+#gall {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}
+#gall img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+  transition: .2s;
+}
+#gall img:nth-child(4n-2) {left: 37.5%;}
+#gall img:nth-child(4n-1) {left: 62.5%;}
+#gall img:nth-child(4n) {left: 87.5%;}
+#gall img:nth-child(n+5) {top: 75%;}
+ 
+#gall img:focus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+#gall img:focus ~ div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  cursor: zoom-out;
+}
+</style>
+<body>
+    <!-- Основной блок сайта -->
+    <div id="basic">
+     
+        <!-- Шапка сайта -->
+        <div id="head-site">
+            <h1>Оля Полякова</h1>
+        </div>
+         
+        <!-- Верхнее меню сайта -->
+        <div id="menu-top">
+        <div class="bg-1">
+            <ul>
+            <li><a href="index1.html">Биография</a></li>
+            <li><a href="index2.html">Музыка</a></li>
+            <li><a href="index3.html">Личная жизнь</a></li>
+            <li><a href="index4.html">Сейчас</a></li>
+            <li><a href="index5.html">Видеография</a></li>
+            <li class="none-bg"><a href="index6.html">Галерея</a></li>
+            </ul>
+        </div>
+        <div class="bg-2"></div>
+        </div>
+		
+		<!-- Левое меню и Контент -->
+        <div id="content">
+         
+            <!-- Контент - правый блок -->
+            <div class="right">
+			<h1>Галерея</h1>
+			</div>
+            <!-- Контент - правый блок -->
+            <div id = "gall">
+				<img src="images/5.jpg" height = "250"/>
+				<img src="images/Vinnik.jpg"/>
+				<img src="images/4.jpg"/>
+				<img src="images/8.jpg"/>
+				<img src="images/апр.jpg"/>
+                <img src="images/Оля Полякова_Мисс Вселенная_2.jpg"/>
+				<img src="images/72_main.jpg" width = "205"/>
+				<img src="images/1.jpg" width = "230" />
+            </div>
+			<div id = "gall">
+			<img src="images/3.jpg" width = "200"/>
+			<img src="images/2.jpg"/>
+			<img src="images/14.jpg"/>
+			<img src="images/11.jpg"/>
+			<img src="images/15.jpg"/>
+			<img src="images/12.jpg"/>
+			<img src="images/щ.jpg"/>
+			<img src="images/13.jpg" width = "200"/>
+			
+			</div>
+		<div class="myclr"></div>
+         
+        <!-- Подвал -->
+        <div id="podval">
+            <div class="yellow"></div>
+            <div class="p1">Фан - сайт Оли Поляковой<br/>
+            2018 год</div>
+            <div class="p2">Спасибо, что посетили наш сайт!</div>
+        </div>
+        <div class="myclr"></div>
+         
+    </div>
+</body>
+</html>
